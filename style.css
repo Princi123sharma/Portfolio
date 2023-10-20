@@ -1,0 +1,517 @@
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+
+}
+
+#div{
+  
+    overflow: hidden;
+}
+
+
+#page1{
+  min-height: 100vh;
+   width:100%;
+   position: relative;
+  
+    
+}
+#nav{
+    height:130px;
+    width:100vw;
+    /* background-color: #00000059; */
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    
+}
+#nav::after{
+    content: "";
+    position: absolute;
+    height:0.3vh;
+    width:0%;
+    left:10%;
+    
+   background-color: #00000097;
+   top:100%;
+   transition: all ease 2s;
+}
+#nav:hover::after{
+   width:80%;
+}
+
+#nav-right{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5vw;
+    padding:25px 30px;
+    /* background-color: red; */
+    margin-right: 10vw;
+    font-size: 20px;
+   font-family: Tilt Neon;
+   font-weight: 500;
+   
+
+    
+}
+#nav-right a{
+    text-decoration: none;
+    color:#000
+    
+}
+#main #center{
+    height:calc(100% - 130px);
+    width:100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 0px 500px;
+    
+    text-align: center;
+
+}
+#center h1{
+    font-family: Tilt Neon;
+    font-size: 12vw;
+  position: absolute;
+  top:20%;
+  right:45%;
+  
+   
+}
+#center h2{
+    font-size: 150px;
+  
+    position:absolute;
+    right:56%;
+    top:50%;
+    font-family:Abel;
+}
+#center span{
+    position: absolute;
+    left:150%;
+    top:-29%;
+   
+   
+    font-family: Tilt Neon;
+    color:navy;
+    font-size: 180px;
+}
+#page2{
+    min-height: 100vh;
+    width:100%;
+    background-color: #000;
+    position: relative;
+}
+#page2::after{
+    content: "";
+    position: absolute;
+    top:95%;
+    left:10%;
+    width:80%;
+    height:0.1vh;
+    background-color: #fff;
+}
+#page2 #left{
+    height:80%;
+    width:40%;
+    /* background-color: #af1a1a; */
+    position: absolute;
+    top:20%;
+    left:20%;
+    text-align: center;
+}
+#left h1{
+    font-size: 5vw;
+    font-family: Tilt Neon;
+    color:#fff;
+}
+
+#left p{
+    font-size: 1.5vw;
+    margin-top: 50px;
+    color: #fff;
+}
+#left h4{
+    font-size: 20px;
+    color: rgb(242, 242, 243);
+    font-family: Tilt Neon;
+    margin-top: 60px;
+    line-height: 25px;
+}
+#right{
+    height:50%;
+    width:30%;
+    /* background-color: #7f1717; */
+    position: absolute;
+    right:7%;
+    top:30%;
+    
+}
+#right img{
+    object-fit: cover;
+    margin-left: 100px;
+    height:280px;
+    
+}
+#page3{
+    min-height: 100vh;
+    width:100%;
+    background-color: #000;
+    position: relative;
+}
+
+#page3::after{
+    content: "";
+    position: absolute;
+    top:95%;
+    left:10%;
+    width:80%;
+    height:0.1vh;
+    background-color: #fff;
+}
+#page3 h1{
+   position: absolute;
+   left:30%;
+   font-family: Tilt Neon;
+   font-size: 3vw;
+   color: #fff;
+}
+#page3 h3{
+    position: absolute;
+   left:34%;
+   font-family: Tilt Neon;
+   font-size: 1.5vw;
+   color: #fff;
+   top:15%;
+}
+#page3 span{
+    font-size: 7vw;
+    color: navy;
+    margin-right: 10px;
+}
+#page3 #develop{
+     position: absolute;
+     top:30%;
+     left:10%;
+     padding: 15px 30px;
+     font-family: Tilt Neon;
+     font-size: 20px;
+     background-color: #000;
+     border: 1px solid #fff;
+     color:#fff;
+     
+}
+#dev-icon{
+    /* background-color: #2e8e1f; */
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    top:42%;
+    width:100%;
+    left:10%;
+
+
+
+}
+.elem{
+    margin: 20px;
+    border-radius: 8%;
+    overflow: hidden;
+    margin-top: 0px;
+   margin-left: 0px;
+}
+.elem img{
+    margin-top: 0;
+    height:90px;
+    width:90px;
+   
+}
+#page3 #design{
+    position: absolute;
+    top:60%;
+    left:10%;
+    padding: 15px 30px;
+    font-family: Tilt Neon;
+    font-size: 20px;
+    background-color: #000;
+    border: 1px solid #fff;
+    color:#fff;
+}
+#dev2-icon{
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    top:70%;
+    width:100%;
+    left:10%;
+}
+.elem2{
+    margin: 20px;
+    border-radius: 8%;
+    overflow: hidden;
+    margin-top: 0px;
+   margin-left: 0px;
+}
+.elem2 img{
+    margin-top: 0;
+    height:90px;
+    width:90px;
+   
+}
+#page4{
+    min-height: 100vh;
+    width:100%;
+    background-color: #000;
+    position: relative;
+    cursor: none;
+}
+#page4 #cursor{
+    height: 40px;
+    width:40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+#page4 h1{
+    position: absolute;
+    left:30%;
+    font-family: Tilt Neon;
+    font-size: 3.5vw;
+    color: #fff;
+}
+#box{
+    position: relative;
+    /* background-color: pink; */
+    height:70%;
+    width:100%;
+    position: absolute;
+    top:20%;
+}
+#page4 h3{
+    position: absolute;
+    left:33%;
+    font-family:  Tilt Neon;
+    font-size: 1.5vw;
+    color:navy;
+    top:8%;
+}
+.elem3{
+    /* border: 2px solid #fff; */
+   position: relative;
+   padding: 40px;
+   height:20%;
+   width:80%;
+   left:10%;
+  
+   margin: 10px;
+   margin-top: 20px;
+ 
+   /* background-color: #661f1f; */
+   bottom: 0%;
+}
+.elem3 img{
+    height:100%;
+    width:10%;
+    position: absolute;
+    top:0%;
+    right:10%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all ease 2s;
+   
+}
+.elem3 h2{
+   
+    font-size: 2vw;
+    color: #fff;
+    font-family: Tilt Neon;
+    
+}
+
+#page5{
+    min-height: 100vh;
+    width:100%;
+    background-color: #fff;
+    position: relative;
+}
+#inner-page{
+    width:80%;
+    background-color: rgba(0, 0, 128, 0.286);
+    height:90%;
+    position: absolute;
+    top:5%;
+    left:10%;
+}
+
+#page5 #right{
+    position: absolute;
+    top:10%;
+    height:75%;
+    width:35%;
+    background-color: rgba(0, 0, 128, 0.286);
+    
+  
+    right:10%;
+    padding: 90px 50px;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+}
+#right h2{
+    font-family: Tilt Neon;
+    font-size: 20px;
+    position: absolute;
+    top:8%;
+    left:50%;
+    transform: translate(-50%,0);
+    color: #fff;
+
+}
+input[type="text"],textarea{
+    width:80%;
+    margin:8px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+   
+}
+input[type="email"]{
+       width:80%;
+       margin:10px;
+       padding:10px;
+       border-radius:12px;
+       border:none;
+      
+}
+#inner-page button{
+    padding: 15px 30px;
+    font-size: 25px;
+    font-family: Tilt Neon;
+    background-color: navy;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#page5 #left{
+    position: absolute;
+    top:10%;
+    height:75%;
+    width:35%;
+    /* background-color: rgba(0, 0, 128, 0.286); */
+    
+  
+    left:10%;
+    padding: 90px 50px;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+}
+#left h2{
+    position: absolute;
+    left:20%;
+    top:21%;
+    font-size: 30px;
+   
+    color:#fff;
+    font-family: Tilt Neon;
+}
+#left h3{
+    position: absolute;
+    left:20%;
+    top:30%;
+    font-size: 20px;
+    color:#fff;
+    font-family: Tilt Neon;
+}
+#left i{
+    position: absolute;
+    left: 45%;
+    top:21%;
+    font-size: 30px;
+    color: #fff;
+}
+#left #phone{
+    position: absolute;
+    left: 20%;
+    top: 38%;
+    font-size: 25px;
+    color: #fff;
+}
+#left #tele{
+    position: absolute;
+    left: 26%;
+    top: 38%;
+    font-size: 20px;
+    color: #fff;
+}
+#icon {
+   height:30%;
+   width:60%;
+    /* background-color: #541c1c; */
+    position: absolute;
+    top:50%;
+    left:10%;
+    
+    position: relative;
+    
+}
+#icon #insta{
+   height:20px;
+   width:20px;
+   position: absolute;
+   left:10%;
+ 
+   
+
+}
+#icon #link{
+    height:20px;
+    width:20px;
+    position: absolute;
+    left:28%;
+    
+ 
+ }
+ #icon #face{
+    height:20px;
+    width:20px;
+    position: absolute;
+    left:45%;
+    
+ 
+ }
+ #icon #git{
+    height:20px;
+    width:20px;
+    position: absolute;
+    left:63%;
+    
+ 
+ }
