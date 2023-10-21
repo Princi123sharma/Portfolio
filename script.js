@@ -46,15 +46,16 @@ page.addEventListener("mousemove",function(dets){
     cursor.style.top=`${dets.y}px`;
 })
 
-var name=document.getElementById("Name").value;
-var email=document.getElementById("Email").value;
-var subject=document.getElementById("subject").value;
-var message=document.getElementById("message").value;
-var body="Name:"+ name + " <br/> Email:" + email +"<br/> Subject:"+subject +" <br/> message:" +message;
-
 
 function Send(){
+    let name=document.getElementById("Name").value;
+    let email=document.getElementById("Email").value;
+    let subject=document.getElementById("subject").value;
+    let message=document.getElementById("message").value;
+    let body="Name: "+ name + " <br/> Email: " + email +"<br/> Subject: "+subject +" <br/> Message: " + message;
+    
     console.log("function call");
+    // console.log(body)
     
     Email.send({
        SecureToken:'f83574d2-c469-4f85-b81e-87cdc8795855',
