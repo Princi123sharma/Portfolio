@@ -348,6 +348,9 @@ html,body{
     font-family: Tilt Neon;
     
 }
+.elem3 a{
+    cursor: pointer;
+}
 
 #page5{
     min-height: 100vh;
@@ -514,4 +517,42 @@ input[type="email"]{
     left:63%;
     
  
+ }
+
+ @media (width<=600px) {
+
+
+    #center{
+        min-height: 50vh;
+        width:100%;
+        background-color: aqua;
+        margin-top: 80px;
+        position: relative;
+        top:100%;
+    }
+
+    #center h1{
+     font-size: 100px;
+     position: relative;
+     top:150%;
+     left:15%;
+    }
+    #center h2{
+        position: relative;
+        left:39%;
+        font-size: 60px;
+        top:100%;
+        margin-top: 40px;
+    }
+    #center span{
+        position: absolute;
+    left:20%;
+    top:-5%;
+   
+   
+    font-family: Tilt Neon;
+    color:navy;
+    font-size: 80px;
+    }
+    
  }
